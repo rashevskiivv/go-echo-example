@@ -10,7 +10,7 @@ import (
 	"net/http"
 )
 
-// http://localhost:8000/cats/json?name=arnold&type=fluffy
+// GetCats http://localhost:8000/cats/json?name=arnold&type=fluffy
 func GetCats(c echo.Context) error {
 	catName, catType := c.QueryParam("name"), c.QueryParam("type")
 	dataType := c.Param("data")
