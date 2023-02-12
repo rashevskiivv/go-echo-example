@@ -1,5 +1,5 @@
 FROM golang
-WORKDIR /go/src/go-fiber-api-docker
+WORKDIR /go/src/go-echo-example
 COPY . .
 RUN go mod download
 RUN go build -o server main.go
